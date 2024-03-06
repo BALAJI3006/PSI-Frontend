@@ -58,7 +58,7 @@
     margin-bottom: 50px;
   }
   .eventDescription {
-    font-size: 1rem;
+    font-size: 2rem;
     color: #555;
   }
   /* .registerbutton {
@@ -162,6 +162,7 @@
   }
   .programRow2 {
     display: flex;
+    margin-top:5px;
     margin: -18px;
     justify-content: space-around;
     width: 97%;
@@ -186,18 +187,18 @@
     position: relative;
     margin-left:1vw;
     top: -11%;
-    left: 15%;
+    left: 50%;
     transform: translate(-50%, -50%);
     color:white;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
   }
   
 
   .card {
-    width: 20vw;
-    height: 254px;
+    width: 15vw;
+    height: 300px;
     border-radius: 20px;
     background: #f5f5f5;
     position: relative; 
@@ -228,9 +229,10 @@
     width: 60%;
     border-radius: 1rem;
     border: none;
-    background-color: #002333;
+    background-color: #063049;
     color: #fff;
-    font-size: 1rem;
+    top:-2%;
+    font-size: 1.5rem;
     padding: .5rem 1rem;
     position: relative;
     left: 30%;
@@ -259,10 +261,13 @@
     transform: translate(-50%, 50%);
     opacity: 4;
    }
-   .cardImage
+   .cardImages
    {
-    height:30vh;
-    width:20vw;
+    height:6vh;
+    width:4vw;
+    margin-left: 35%;
+    margin-bottom: 10%;
+    border-radius: 2px;
    }
 
 

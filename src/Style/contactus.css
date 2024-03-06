@@ -60,15 +60,14 @@
 
 
 .verticalBox {
-  height: 130vh; /* Adjust the height as needed */
-  width: 30vw; /* Adjust the width as needed */
-
+  height: 90vh; /* Adjust the height as needed */
+  width: 20vw; /* Adjust the width as needed */
   background-color: #051e29;
-  position: relative ;
+  position: relative;
   left: 0;
   top: 0;
   color: white;
-  padding: 50px;
+  padding: 40px;
   line-height: 1.5;
   flex: 1;
 }

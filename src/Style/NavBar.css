@@ -59,6 +59,7 @@ a {
 .logo {
   margin-top: 25px;
   height: 50px;
+  left:30px;
   width: 100px;
   position: relative;
 }
@@ -66,7 +67,7 @@ a {
 .loginButton {
   font-size: 17px;
   padding: 0.5em 2em;
-  right: 20px;
+  right: 10px;
   border: transparent;
   box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
   background: #002333;
@@ -142,6 +143,7 @@ a {
     transition: 0.5s ease-in;
     z-index: 10;
     opacity:85%;
+    justify-content: space-evenly;
   }
 }
 
@@ -157,5 +159,5 @@ a {
   opacity: 0;
 }
 .toggle .line3 {
-  transform: rotate(45deg) translate(-5px, -5px);
+  transform: rotate(45deg) translate(-5.5px, -5px);
 }

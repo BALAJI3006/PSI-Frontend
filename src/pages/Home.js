@@ -9,12 +9,20 @@ import '../Style/Home.css';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import '../Style/scrollbar.css';
-
+import Mobile from "../Images/Mobile1.png";
+import Google from "../Images/Google.png";
+import Green from '../Images/GreenComputing.png';
+import slider1 from '../Images/Slider1.png';
+import Program1 from '../Images/Program1.png';
+import Webinar from '../Images/webinars1.png';
+import About from '../Images/About.png';
+import Course from "../Images/courses.png";
+import Workshop from "../Images/workshops.png";
 const ImageSlider = () => (
   <div className='sliderContainer'>
-    <Carousel showThumbs={false} autoPlay={true} infiniteLoop interval={2000} showStatus={false} className='carouselContainer'>
+    <Carousel showThumbs={false} autoPlay={false} infiniteLoop interval={2000} showStatus={false} className='carouselContainer'>
       <div>
-        <img alt="Slide 1" src="https://cdn.discordapp.com/attachments/1205756212445192263/1205756751660453908/1.png?ex=65d9877b&is=65c7127b&hm=be4838c224e55ea6ba8927a529c377d79fff4bef1a4e35c0d63e0faadd849744&" className="carouselImage" />
+        <img alt="Slide 1" src={slider1} className="carouselImage" />
       </div>
       <div>
         <img alt="Slide 2" src="https://cdn.discordapp.com/attachments/1205756212445192263/1205756752088408094/2.png?ex=65d9877b&is=65c7127b&hm=e780502dd16513f61f7f76c66343774757556433a2db3abe78825f00a2b27c29&" className="carouselImage" />
@@ -53,21 +61,21 @@ const ProgramGrid = () => (
   <div className='programGrid'>
     <div className='programRow1'>
       <div className='programCard'>
-        <img alt="Program 1" src="https://cdn.discordapp.com/attachments/1205756212445192263/1205763020190384198/5.png?ex=65d98d52&is=65c71852&hm=b4109f5252b78111b15bc7288d97574bf5f072cd83428a3ce0f84a49cc364d73&" className='programImage' />
+        <img alt="Program 1" src={Course} className='programImage' />
         <div className='programName'>Courses</div>
       </div>
       <div className='programCard pc2'>
-        <img alt="Program 2" src="https://cdn.discordapp.com/attachments/1205756212445192263/1205763020463149106/6.png?ex=65d98d52&is=65c71852&hm=31cb1a34d1bd095481029b17d2e52ea055a468b91cb389a4789500f41e646c89&" className='programImage' />
+        <img alt="Program 2" src={Workshop} className='programImage' />
         <div className='programName'>Workshops</div>
       </div>
     </div>
     <div className='programRow2'>
       <div className="programCard pc3">
-        <img alt="Program 3" src="https://cdn.discordapp.com/attachments/1205756212445192263/1205763020731453440/7.png?ex=65d98d52&is=65c71852&hm=d1ddb5fd6482ae5ec26a42643ab3a7d3143c02fb65de715c2429b5baf6b6f06a&" className=" programImage" />
+        <img alt="Program 3" src={Program1} className=" programImage" />
         <div className='programName'>Internships</div>
       </div>
       <div className='programCard pc4'>
-        <img alt="Program 4" src="https://cdn.discordapp.com/attachments/1205756212445192263/1205763021046030356/8.png?ex=65d98d52&is=65c71852&hm=0f5c25b778feaaaaff192e1d2317271f0f973466c7d9b141828e1940ea246890&" className=" programImage" />
+        <img alt="Program 4"  src={Webinar} className=" programImage" />
         <div className='programName'>Webinars</div>
       </div>
     </div>
@@ -95,19 +103,19 @@ const MainContent = () => (
     <h1 style={{marginTop:'3vw'}}>UPCOMING EVENTS</h1>
     <div className='eventsSection'>
       <EventCard
-        title="Event 1"
+        title="Mobile App Development By Flutter"
         description="Description of event 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        imageUrl="https://cdn.discordapp.com/attachments/1205756212445192263/1205781810223521812/15.png?ex=65d99ed1&is=65c729d1&hm=37550d6c8cc7d2c9ff63498cd676b00bb0d9ef288e33f4efe4942db6a1713ea6&"
+        imageUrl={Mobile}
       />
       <EventCard
-        title="Event 2"
+        title="Google Cloud Platform"
         description="Description of event 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        imageUrl="https://cdn.discordapp.com/attachments/1205756212445192263/1205781810466918450/12.png?ex=65d99ed1&is=65c729d1&hm=637278f4f489dccba2d2859079be569a9b2dc9c875ddc3574d68e2f7366c3652&"
+        imageUrl={Google}
       />
       <EventCard
-        title="Event 3"
+        title="Green Computing"
         description="Description of event 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        imageUrl="https://cdn.discordapp.com/attachments/1205756212445192263/1205781810819244042/13.png?ex=65d99ed2&is=65c729d2&hm=dd74aff8e66c506dc122073806e573f92a9ab9f2788e91b62ced36b51337d297&"
+        imageUrl={Green}
       />
     </div>
 
@@ -141,7 +149,7 @@ const AboutSection = () => (
         <div className='aboutSection2'>
         <img
           className='aboutusImage2'
-          src="https://cdn.discordapp.com/attachments/1205756212445192263/1205772571379769464/10.jpg?ex=65d99637&is=65c72137&hm=93b4336bbd16fc3dfb3e6ed21bdc3801a5daf7f5ba3698050ba8f3696c2d69fd&"
+        src={About}
           alt="Placeholder"
         />
           <h1 className='aboutSectionheading' >About Us</h1>
@@ -151,7 +159,7 @@ const AboutSection = () => (
         </div>
         <img
           className='aboutusImage1'
-          src="https://cdn.discordapp.com/attachments/1205756212445192263/1205772571379769464/10.jpg?ex=65d99637&is=65c72137&hm=93b4336bbd16fc3dfb3e6ed21bdc3801a5daf7f5ba3698050ba8f3696c2d69fd&"
+          src={About}
           alt="Placeholder"
         />
       </div>
