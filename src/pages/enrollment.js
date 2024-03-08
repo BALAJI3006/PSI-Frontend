@@ -9,7 +9,8 @@ const Enrollment = () => {
     <div className="enrollment-container">
       <NavBar />
       <div className="enrollment-section">
-        <h1>Club Enrollment Form</h1>
+        <h1 style={{position: "relative",
+    top: "45px"}}>Club Enrollment Form</h1>
         <div className='form-box'>
           <div className='form-field'><p>FullName:</p><input type='text' /></div>
           <div className='form-field'><p>Email ID:</p><input type='text' /></div>

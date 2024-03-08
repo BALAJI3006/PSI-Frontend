@@ -18,7 +18,7 @@ const LazyAbout = React.lazy(() => import('./pages/AboutUs'))
 const LazyNopage = React.lazy(() => import('./pages/NoPage'))
 const LazyLogin = React.lazy(() => import('./pages/Login'))
 const LazyContact = React.lazy(() => import('./pages/contactus'))
-const LazyDash = React.lazy(() => import('./pages/Dashboard'))
+const LazyDash = React.lazy(() => import('./pages/dashboard1'))
 const LazyForgot = React.lazy(() => import('./pages/ForgotPassword'))
 const LazyReset = React.lazy(() => import('./pages/ResetPassword'))
 const LazyEnroll = React.lazy(() => import('./pages/enrollment'))
@@ -34,7 +34,7 @@ export default function App() {
           <Route path="/about" element={<LazyAbout />} />
           <Route path="/nopage" element={<LazyNopage />} />
           <Route path="/contact" element={<LazyContact />} />
-          <Route path="/dashboard" element={<LazyDash />} />
+          <Route path="/dashboard1" element={<LazyDash />} />
           <Route path="/login" element={<LazyLogin />} />
           <Route path="/reset" element={<LazyReset />} />
           <Route path="/forgot" element={<LazyForgot />} />

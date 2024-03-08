@@ -29,10 +29,11 @@
 }
 
 .form-box {
-  margin-top: 7%;
-  margin-left: 9%;
-  text-align: left;
-  width: 680px;
+    margin-top: 6%;
+    margin-bottom: 3%;
+    margin-left: 1%;
+    text-align: left;
+    width: 680px;
 }
 
 .form-field {
