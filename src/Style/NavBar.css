@@ -67,7 +67,7 @@ a {
 .loginButton {
   font-size: 17px;
   padding: 0.5em 2em;
-  right: 10px;
+  margin-right: 2%;
   border: transparent;
   box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
   background: #002333;
@@ -130,6 +130,7 @@ a {
     background: #002333;
     color: white;
     border-radius: 4px;
+    
    }
   .nav__menu {
     position: fixed;
@@ -162,25 +163,47 @@ a {
   transform: rotate(45deg) translate(-5.5px, -5px);
 }
 
-.dropdown {
+.dropDown {
   position: relative;
   cursor: pointer;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  width: 6%;
+  margin-left: -50%;
+  /* padding: 15%; */
+
 }
+.dropDown p{
+  margin-top: 80%;
+  color: white;
+  font-size: 20px;
+  margin-right: 110%;
+}
+.imageDp{
+  width: 40px;
+  color: white;
+  background-color: grey;
+  padding: 2px;
+  border-radius: 50%;
+}
+
+
 
 .userEmail {
   position: relative;
+  right: 10%;
   display: flex;
   align-items: center;
   cursor: pointer;
   margin-right: 25px;
-  background-color: black;
+  background-color: #053047;
   padding: 5px 20px;
+  /* margin-right: 10%; */
 }
 
 .userEmail p {
   margin: 0;
+  color: white;
   font-weight: bold;
 }
 
@@ -218,3 +241,4 @@ a {
 .show {
   display:normal;
 }
+

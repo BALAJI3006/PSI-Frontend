@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import "../Style/NavBar.css";
 import Logo from '../Images/Logo.png';
+import defaultDp from "../Images/user.png";
 
 const  NavBar =() => {
   const [active, setActive] = useState("nav__menu");
@@ -70,11 +71,12 @@ const logout = async () =>{
        
       </ul>
       {/* <button className='loginButton' ><Link to="/login" className="navLink">Login</Link></button> */}
-      {console.log(userGmail)}
+      {console.log("userGmail:",userEmail)}
            
                 {userEmail ?  <div  onClick={toggleDropdown}>
                     <div className='dropDown'><p>{userEmail.fullname}</p>
-                    <img src={userGmail} alt="User Profile" /></div>
+                                              <img className="imageDp" src={defaultDp} alt="User Profile" />
+                                              </div>
                  </div>: userGmail ?  <div  onClick={toggleDropdown}> 
                     <div className='userEmail'>
                         <p>{userGmail.given_name}</p>
